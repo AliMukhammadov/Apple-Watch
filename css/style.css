@@ -1,0 +1,255 @@
+/* GLOBAL */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+html {
+    height: 100%;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+/* CONTAINER */
+.container {
+    margin-left: 125px;
+    width: 1250px;
+}
+
+/* HEADER SECTION */
+.main-header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.main-header-container {
+    display: flex;
+    align-items: center;
+}
+
+.site-link {
+    display: block;
+    margin-right: auto;
+}
+
+.site-navbar-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin-right: 40px;
+}
+
+.site-nav-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.site-nav-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.site-nav-item:hover {
+    opacity: 0.8;
+}
+
+.site-nav-item:active {
+    opacity: 0.6;
+}
+
+.global-search {
+    width: 153px;
+}
+
+.global-search-input {
+    border: 0;
+    border-bottom: 1px solid #333;
+    padding-bottom: 3px;
+    line-height: 22.5px;
+}
+
+.global-search-input:focus {
+    outline: none;
+}
+
+/* FIRST SECTION */
+.freedom {
+    margin-top: 170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.freedom-content {
+    float: left;
+    width: 490px;
+    height: 291px;
+}
+
+.first-heading {
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.first-paragrph {
+    color: #777;
+    font-size: 16px;
+    border-left: 3px solid #888;
+    padding-left: 40px;
+    margin-bottom: 30px;
+    line-height: 24px;
+}
+
+.freeadom-link {
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    background-color: #EA625C;
+    padding: 12px 38.5px;
+}
+
+.freeadom-link:hover {
+    opacity: 0.8;
+}
+
+.freeadom-link:active {
+    opacity: 0.6;
+}
+
+.freedom-image {
+    margin-left: 1000px;
+    margin-top: -100px;
+}
+
+/* SECOND SECTION */
+.more-info {
+    margin-top: 68px;
+}
+
+.more-info > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-1 {
+    width: 280px;
+    margin-top: 20px;
+}
+
+.card-1 p {
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.card-2 {
+    width: 280px;
+}
+
+.card-2 p {
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.card-3 {
+    width: 280px;
+    margin-top: -40px;
+}
+
+.card-3 p {
+    line-height: 24px;    
+    font-weight: 400;
+}
+
+.card-3-link:hover {
+    opacity: 0.8;
+}
+
+.card-3-link:active {
+    opacity: 0.6;
+}
+
+/* THIRD SECTION */
+.third-section > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.third-content {
+    width: 490px;
+}
+
+.content-heading {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.content-p {
+    border-left: 3px solid #888;
+    padding-left: 40px;
+    color: #777;
+    line-height: 24px;
+    margin-bottom: 30px;
+}
+
+/* FOOTER */
+.site-footer {
+    height: 831px;
+    background: url('../images/runners\ 1.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    width: 490px;
+    color: #fff;
+    margin-left: 800px;
+}
+
+.footer-h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.footer-p {
+    font-size: 16px;
+    border-left: 2px solid #fff;
+    padding-left: 40px;
+    margin-bottom: 30px;
+}
+
+/* RETINA BACKGROUND IMAGE */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+    .site-footer {
+        background: url('../images/runners\ 1.png');
+    }
+}
